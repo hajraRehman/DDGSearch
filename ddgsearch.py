@@ -41,7 +41,7 @@ if prompt :=st.chat_input():
   st.chat_message("user").write(prompt)
   with st.chat_message("assistant"):
     st.write(" Thinking ...")
-    st_callback = streamlit_callback_handler(st.container())
+    st_callback = StreamlitCallbackHandler( parent_container = st.container())
     response = agent.run(prompt, callbacks= [st_callback])
     st.write(response)
 
