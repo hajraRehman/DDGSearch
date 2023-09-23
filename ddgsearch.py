@@ -9,7 +9,6 @@
 
 # MRKL Agent for LLMs
 
-#key : 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
 
 #pip install streamlit openai langchain
 
@@ -23,7 +22,7 @@ from langchain.agents import load_tools , initialize_agent , AgentType
 from langchain.callbacks import StreamlitCallbackHandler
 import streamlit as st
 
-llm = OpenAI ( temperature= 0 , streaming= True , openai_api_key= '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')
+llm = OpenAI ( temperature= 0 , streaming= True , openai_api_key= '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')
 # Agents = prompt chain agent
 #duckduckgo  = can search anything
 
