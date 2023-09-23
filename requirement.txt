@@ -1,0 +1,5 @@
+pandas
+langchain
+streamlit
+OpenAi
+duckduckgo-search
