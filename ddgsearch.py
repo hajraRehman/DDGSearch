@@ -22,7 +22,7 @@ from langchain.agents import load_tools , initialize_agent , AgentType
 from langchain.callbacks import StreamlitCallbackHandler
 import streamlit as st
 
-llm = OpenAI ( temperature= 0 , streaming= True , openai_api_key= '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')
+llm = OpenAI ( temperature= 0 , streaming= True , openai_api_key= st.secrets["api_key"])
 # Agents = prompt chain agent
 #duckduckgo  = can search anything
 
